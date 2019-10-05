@@ -7,16 +7,24 @@ body {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  display: inline-block;
+  display: table;
+}
+
+.circle-center-text {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
 }
 
 .rectangle {
   background-color: goldenrod;
-  height: 45px;
-  width: 120px;
-  display: inline-block;
-  position: relative;
-  left: -75px;
+  height: 15px;
+  width: 50px;
+  position: absolute;
+  left: 115px;
+  top: 155px;  
   z-index: -1;
+  padding: 20px 0 10px 70px;
+  font-size: 14px;
 }
 

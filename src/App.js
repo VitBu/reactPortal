@@ -4,8 +4,9 @@ import './App.css';
 function App() {
   return (
     <div>
-     <span className="circle" />
-     <span className="rectangle" />
+      <div className="circle"><span className="circle-center-text">SUCCESS</span></div>
+      <div className="rectangle">click</div>
+
     </div>
   );
 }
