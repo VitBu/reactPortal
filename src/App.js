@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div>
      <span className="circle" />
      <span className="rectangle" />
     </div>
