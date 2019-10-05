@@ -2,21 +2,18 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.circle {
+  background-color: gray;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.rectangle {
+  background-color: goldenrod;
+  height: 45px;
+  width: 120px;
+  display: inline-block;
 }
 
-.App-link {
-  color: #09d3ac;
-}
