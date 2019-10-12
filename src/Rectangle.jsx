@@ -1,28 +1,35 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
+import { CirclePortal } from './CirclePortal';
+import { ValHolder } from './ValHolder';
+
 export default class Rectangle extends Component {
 
     state = {
-        clicked: false
+        clicked: false,
+        value: ""
     }
 
     render() {
         return (
             <>
+                <ValHolder  value={this.state.value}   handleClick={this.handleClick}/>
                 <div onClick={() => this.setState({ clicked: true })} className="rectangle">click</div>
                 {this.state.clicked && (
-                    <Tt>
+                    <CirclePortal>
                         <span id="target-text">Clicked</span>
-                    </Tt>
+                    </CirclePortal>
                 )}
+                
             </>
         );
+    }
+
+    handleClick = (e) => {
+        this.setState({
+            value: e.target.value
+        });
     }
     
 }
 
-class Tt extends Component {
-    render() {
-        return ReactDOM.createPortal(this.props.children, document.getElementById('circle')); 
-    }
-}
+
