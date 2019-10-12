@@ -22,10 +22,13 @@ body {
   background-color: goldenrod;
   height: 15px;
   width: 50px;
-  position: absolute;
+  position: relative;
   left: 115px;
   top: 155px;  
   padding: 20px 0 10px 70px;
   font-size: 14px;
 }
 
+.forVal {
+  height: 70px;
+}
